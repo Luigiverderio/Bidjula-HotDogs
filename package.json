@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "git-all": "git add . && git commit -m \"mensagem de commit aqui\" && git push"
+    "git-all": "git add . && git commit -m \"Atualizando o site\" && git push"
   }
 }
