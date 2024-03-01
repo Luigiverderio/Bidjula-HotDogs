@@ -3,6 +3,6 @@
 ---
 ## Tecnologias
 - Header Interativo
--
+- Colaboração git
 -
 ---
