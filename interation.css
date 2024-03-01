@@ -2,10 +2,26 @@
   nav {
     display: none;
   }
+
+}
+
+@media screen and (max-width:800px){
+  section{
+    display: none;
+  }
+  main{
+    display: flex;
+    justify-content: center;
+  }
+  article h1{
+    font-size: 30px;
+    width: 200px;
+  }
 }
 
 @media screen and (min-width:720px) {
   #nav-int {
     display: none;
   }
+
 }
