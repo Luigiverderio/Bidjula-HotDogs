@@ -3,107 +3,43 @@
 
 *{
   margin: 0; /*Tirando as margens dos elementos*/
+  padding: 0;
+  box-sizing: border-box; /*Tamanho das boxes serão apenas seu espaço interno, sem contar bordas e margins*/
+  font-family: "Poppins", sans-serif; /*Fonte padrão do projeto*/
+  list-style: none;  /*Remove o marcador da lista por padrão*/
+  text-decoration: none; /*Remove a underline de links*/
 }
+
+:root{ /*Criando as variáveis de cor*/
+  --red:red;
+  --white:#fff;
+  --dark:#1e1c2a;
+}
+
 body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  color: var(--dark); /*Cor primária para todo o corpo*/
+  background-color: var(--white) ;/*Cor do fundo branca*/
 }
-header{
-  background-color: rgba(117, 117, 117, 0.491);
+.navigation{ /*Estilizando a barra superior de navegação da página*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:18px 40px; /*Criando uma margin top/bottom de 18px e left/right de 40px*/
+  box-shadow: 0 0.1rem 0.5rem #ccc;
   width: 100%;
-  max-width: 1600px;
-  height: 100px;
-  justify-content: space-around; /*Estilização do header*/
+  background: var(--white);
+  transition: 0.5s all;
+}
+.navigation .logo{ /*Estilizando o logotipo na barra superior*/
+  color: var(--dark);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.logo span{
+  color:var(--red);
+}
+
+.navigation ul{
+  display: flex;
   align-items: center;
-  display: flex;
-}
-header:hover{
-  cursor: default;
-}
-#logo{
-  color: rgba(58, 0, 0, 0.884);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-}
-nav{
-  display: flex;
-  justify-content: space-around;
-}
-nav a{
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  font-size: 20px;
-  font-weight: 500;
-  margin-inline: 30px;
-  font-weight: 700;
-}
-nav a:hover{
-  color: white;
-  transition: 0.3s all ease;
-}
-
-/*Main*/
-
-main{
-  width: 100%;
-  max-width: 1400px;
-  height: 100vh;
-  margin-top: 30px; /*Definindo as propriedades do corpo da minha página*/
-  display: flex;
-  flex-direction: row;
-  }
-article{
-  display: flex;
-  height: 400px;
-  width: 50%;
-  background-color: rgb(137, 139, 137);
-  color: white;
-  border-radius: 10px;
-}
-article h1{
-  margin-left: 50px;
-  font-size: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 40%;
-  margin-top: 30px;
-}
-section{
-  display: flex;
-  height: 400px;
-  width: 50%;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  background-image: url(src/img/doghot.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-} 
-
-div a{
-  text-decoration: none;
-  color: black;
-}
-
-#nav-int{
-  display: flex;
-  flex-direction: column;
-
-}
-#nav-int a{
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  font-size: 20px;
-  font-weight: 500;
-  margin-inline: 30px;
-  font-weight: 700;
-}
-
-#nav-int a:hover{
-  color: white;
-  transition: all 0.3s ease;
 }
