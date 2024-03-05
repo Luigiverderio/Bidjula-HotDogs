@@ -25,21 +25,53 @@ body{
   align-items: center;
   justify-content: space-between;
   padding:18px 40px; /*Criando uma margin top/bottom de 18px e left/right de 40px*/
-  box-shadow: 0 0.1rem 0.5rem #ccc;
-  width: 100%;
+  box-shadow: 0 0.1rem 0.5rem #ccc; /*Sombra na caixa do navigation*/
+  width: 100%; /*Largura igual a 100% da tela*/
   background: var(--white);
-  transition: 0.5s all;
+  transition: 0.5s all; 
 }
 .navigation .logo{ /*Estilizando o logotipo na barra superior*/
   color: var(--dark);
   font-size: 1.7rem;
   font-weight: 600;
 }
-.logo span{
+.logo span{ /*Alterando a cor do span da logo para vermelho*/
   color:var(--red);
 }
 
 .navigation ul{
-  display: flex;
-  align-items: center;
+  display: flex; 
+  align-items: center; /*Alinhando os elementos dentro da ul  em um mesmo lugar verticalmente*/
+  column-gap: 5rem; /*Criando um espaçamento entre os elementos da ul*/
+}
+.navigation ul li a{ /*Estilizando os botões dos itens da navbar*/
+  color: var(--dark);
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+.navigation ul li a:hover{  /*Mudando a cor quando passar por cima dos botões*/
+  color: var(--white);
+}
+.navigation box-icon { /*Aumentando o tamanho do icone da lupa*/
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.manu{
+  cursor: pointer;
+}
+.menu .bar{ /*Estilizando as barras do menu interativo*/
+  display: block; /*Colocando elas numa posição fixa*/
+  width: 28px; /*Largura*/
+  height: 3px; /*Altura*/
+  border-radius: 3px;  /*Arredondar as bordas*/
+  background-color: var(--dark); /*Cor do fundo vermelha*/
+  margin: 5px auto;  /*Espaço entre as barras verticalmente*/
+  transition: all 0.3s; /*Fazendo com que as mudanças sejam suaves*/
+  display: none;  /*Escondendo as barras no inicio*/
+}
+
+.menu .bar:nth-child(1), /*Estilizando o filho 1 e 3 das barras*/
+.menu .bar:nth-child(3){
+  background-color: var(--red);
 }
