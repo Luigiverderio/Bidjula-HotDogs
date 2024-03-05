@@ -1,5 +1,0 @@
-{
-  "scripts": {
-    "git-all": "git add . && git commit -m \"Atualizando o site\" && git push"
-  }
-}
