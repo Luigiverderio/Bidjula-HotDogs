@@ -34,6 +34,7 @@ body{
   color: var(--dark);
   font-size: 1.7rem;
   font-weight: 600;
+  margin-right: 40px;
 }
 .logo span{ /*Alterando a cor do span da logo para vermelho*/
   color:var(--red);
