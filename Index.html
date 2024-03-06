@@ -15,8 +15,8 @@
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 <body>
-  <!--Criando o navigation que é onde o usuário vai poder se locomover-->
   <header>
+    <!--Criando o navigation que é onde o usuário vai poder se locomover-->
     <nav class="navigation"> 
 
       <!--O Logo da pagina-->
@@ -25,22 +25,37 @@
       
       <!--Menu de navegação-->
 
-      <ul class="nav menu"> 
-        <li class="nav-item"><a href="#">Home</a></li> 
-        <li class="nav-item"><a href="#">Sobre</a></li>
-        <li class="nav-item"><a href="#">HotDogs</a></li>
-        <li class="nav-item"><a href="#">Contato</a></li>
-        <box-icon name='search-alt-2'></box-icon>
-      </div>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#">Home</a></li> 
+          <li class="nav-item"><a href="#">Sobre</a></li>
+          <li class="nav-item"><a href="#">HotDogs</a></li>
+          <li class="nav-item"><a href="#">Contato</a></li>
+          <box-icon name='search-alt-2'></box-icon>
+        </ul>
 
       <!--Menu interativo com barrinhas-->
+      <div class="menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
 
-        <div class="menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-      </ul>
-
-    </nav> 
+    </nav>
+  </header>
+  <main>
+    <section class="home"> <!--Criando a section home, local que irá conter a seção principal do site-->
+      <div class="home-text"> <!--Criando o texto da section-->
+        <h4 class="text-h4">Bem vindo ao Bidjula HotDogs</h4> 
+        <h1 class="text-h1">Venha se deliciar com nossos Hot-Dogs!</h1>
+        <p>O Bidjula HotDogs tem mais de 10 anos de mercado, aqui o produto é de qualidade! Experimente todos as nossas variedades de cachorro-quentes!</p>
+        </p>
+        <a href="#" class="home-btn">Fazer um pedido</a>
+      </div>
+      <div class="home-img">  <!--Criando a imagem da section-->
+        <img src="src/img/sectionimg.jpg" alt="HotDog" id="home-hotdog">
+      </div>
+    </section>
+  </main> 
+  <script src="src/js/index.js"></script>  
 </body>
 </html>
