@@ -1,8 +1,6 @@
-# Site lanchonete - Bidjula 
-## Colaborations: @LeonardoMartins016
+# Site lanchonete - Bidjula 🌭
 ---
-## Tecnologias
-- Header Interativo
-- Colaboração git
--
+## Tecnologias 📓
+- Header Interativo 📦
+- Colaboração git ⚙️
 ---
